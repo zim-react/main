@@ -1,4 +1,6 @@
 import axios from 'axios'
+
+
 const AuthPage = (props) => {
     const onSubmit = (e) => {
       e.preventDefault();
@@ -14,7 +16,7 @@ const AuthPage = (props) => {
       <div className="background">
         <form onSubmit={onSubmit} className="form-card">
           <div className="form-title">Welcome 👋</div>
-  
+      
           <div className="form-subtitle">Set a username to get started</div>
   
           <div className="auth">
@@ -30,3 +32,4 @@ const AuthPage = (props) => {
   };
   
   export default AuthPage;
+  
