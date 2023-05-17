@@ -1,6 +1,8 @@
+const https = require("https");
 const express = require("express");
 const cors = require("cors");
 const { default: axios } = require("axios");
+const fs = require("fs");
 
 const app = express();
 app.use(express.json());
@@ -21,4 +23,16 @@ try{
     }
 });
 
-app.listen(3001);
+app.get('/', (req,res)=>{
+  res.send("Hello from express server.")
+});
+
+https
+  .createServer(
+    {
+      key: fs.readFileSync("key.pem"),
+      cert: fs.readFileSync("cert.pem"),
+    },
+    app
+    )
+  .listen(3001);
