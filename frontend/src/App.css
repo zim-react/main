@@ -1,5 +1,5 @@
 body {
-  background-image: url('./assets/valley.jpeg');
+  background-image: url('./assets/blue.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -7,7 +7,6 @@ body {
 
 .background {
   height: 100vh;
-  background: linear-gradient(75deg, rgb(20, 23, 33) 0%, rgb(20, 23, 33) 50%, rgba(20, 23, 33, 0.8) 100%);
   display: flex; /* Use flexbox to center content vertically and horizontally */
   justify-content: center;
   align-items: center;
@@ -28,7 +27,7 @@ body {
   font-family: 'Avenir';
   font-weight: 800;
   letter-spacing: 0.5px;
-  color: #9679d3;
+  color: #f5f4f9;
   padding-bottom: 12px;
   white-space: nowrap;
   overflow: hidden;
@@ -60,14 +59,14 @@ body {
   right: calc(30% + 26px);
   transform: translateX(-100%);
   font-size: 11px;
-  color: rgb(175, 175, 175);
+  color: rgb(136, 235, 242);
   font-family: Avenir;
   width: 100px;
 }
 
 .auth-input {
   background-color: #3e404b;
-  color: white;
+  color: rgb(238, 237, 242);
   font-family: "Avenir";
   outline: none;
   border: none;
@@ -81,8 +80,8 @@ body {
 .auth-button {
   width: 30%;
   height: 53px;
-  color: white;
-  background-color: #a859cc;
+  color: rgb(20, 184, 234);
+  background-color: #f2edf5;
   border: none;
   outline: none;
   border-radius: 8px;
@@ -108,7 +107,7 @@ body {
   postion: relative;
   overflow: hidden;
   font-size: 200px;
-  color: #be6bf2;
+  color: #f2f6f1;
   align-items: center;
   padding-bottom: 12px;
   animation: fadeIn 3s ease-in-out;
